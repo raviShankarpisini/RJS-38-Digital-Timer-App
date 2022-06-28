@@ -1,0 +1,136 @@
+/* Write your CSS here */
+.app-container {
+  background-image: linear-gradient(to right, white, #cffcf1);
+  height: 100vh;
+  background-size: cover;
+  overflow: auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+
+  flex-wrap: wrap;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  height: 100%;
+}
+.heading {
+  font-family: 'Roboto';
+  font-size: 30px;
+  color: #1e293b;
+  font-weight: bold;
+  text-align: center;
+}
+.timer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 80vw;
+  height: 100%;
+}
+.running-timer-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  width: 100%;
+  max-width: 500px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-wrap: wrap;
+}
+.round-time-circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  /* background-position: center; */
+
+  background-color: white;
+}
+.running-time {
+  color: #00d9f5;
+  font-family: 'Roboto';
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0px;
+}
+.paused-text {
+  font-family: 'Roboto';
+  font-size: 18px;
+  color: #0f172a;
+  padding: 5px;
+  margin: 0px;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.start-reset-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.start-icon-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+}
+.pause-icon {
+  height: 15px;
+}
+.set-timer {
+  font-size: 15px;
+  font-family: 'Roboto';
+}
+.increase-decrease-container {
+  display: flex;
+}
+.count {
+  color: #0f172a;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 8px;
+  background-color: #00d9f5;
+  margin: 10px;
+}
+.plus-and-minus-button {
+  background-color: transparent;
+  color: #0f172a;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+@media screen and (max-width: 576px) {
+  .timer-container {
+    flex-direction: column;
+  }
+  .running-timer-container {
+    max-width: 350px;
+    align-self: center;
+  }
+  .round-time-circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
